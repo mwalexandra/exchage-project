@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header_link logo-wrapper demo-link">
+        <img class="header__logo" src="./img/logo.svg" alt="Logo">
+        <img class="header__logo-small" src="./img/small-logo.svg" alt="Logo">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav_list">
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">Home</a>
+          </li>
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">Tariffs</a>
+          </li>
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">Reviews</a>
+          </li>
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">Rules</a>
+          </li>
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">FAQ</a>
+          </li>
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">For partners</a>
+          </li>
+          <li class="header__nav_list_item">
+            <a class="demo-link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <button class="signup-btn btn demo-link">Sign Up</button>
+        <button class="login-btn btn header__nav__login-btn">Login in</button>
+        <button class="logout-btn btn header__nav__logout-btn">Login out</button>
+        <div class="burger-menu">
+          <button class="burger-menu__open-btn"></button>
+          <div class="burger-blur">
+            <div class="burger-menu__wrapper">
+              <span class="burger-close__span"></span>
+              <button class="login-btn burger-btn burger__login-btn">Login in</button>
+              <button class="logout-btn burger-btn burger__logout-btn">Logout out</button>
+              <ul class="burger-menu_list">
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">Home</a>
+                </li>
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">Tariffs</a>
+                </li>
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">Reviews</a>
+                </li>
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">Rules</a>
+                </li>
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">FAQ</a>
+                </li>
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">For partners</a>
+                </li>
+                <li class="burger-menu_list_item">
+                  <a class="demo-link" href="#">Contacts</a>
+                </li>
+              </ul>
+              <form action="#" class="search-form">
+                <input class="search-form__input" type="search" name="search" id="search-input" placeholder="Search">
+                <button class="search-input__button"></button>
+              </form>
+            </div>  
+          </div>  
+        </div>
+      </nav>
+    </div>  
+  </header>
+  <main class="main">
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo__head">Currency Exchange fast & safe</h1>
+        <p class="promo__description">No extra fee. Account replenishment no longer than 15 minutes</p>
+        <form class="exchange_form">
+          <div class="exchange_form__column">
+            <label class="exchange_form_label-give" for="give-amount">
+              <input id="give-amount" type="text" placeholder="Amount">
+            </label>
+            <select name="give_currency" id="give_currency" class="exchange_form__select"></select>
+          </div>
+          <div class="exchange_form__column">
+            <label class="exchange_form_label-recieve" for="receive-amount">
+              <input id="receive-amount" type="text" disabled="true" placeholder="Amount">
+            </label>
+            <select name="receive_currency" id="receive_currency" class="exchange_form__select"></select>
+          </div>
+          <div class="exchange_form__row">
+            <div class="exchange_form__rate"></div>
+            <div class="exchange_form__commission"></div>
+          </div>
+          <button class="btn exchange_form__submit" type="submit">Exchange</button>
+          <label class="exchange_form__checkbox-label">
+            <input class="exchange_form__checkbox" type="checkbox" name="rules_agree" id="rules_agree">
+            I agree with 
+            <a href="#">Rules and statements</a>
+          </label>
+        </form>
+      </div>  
+    </section>  
+    <section class="applications">
+      <div class="container">
+        <h2 class="applications__heading section__heading">Latest applications</h2>
+        <div class="swiper">
+          <ul class="swiper-wrapper applications__list">
+            <!-- render -->
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>  
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <figure class="footer__figure logo-wrapper">
+          <img src="./img/logo.svg" alt="Logo">
+        </figure>
+        <div class="footer__copyright">
+          <p class="footer__copyright_text">&copy; 2021, cryptosale.net</p>
+          <p class="footer__copyright_text">All rights reserved</p>
+        </div>
+      </div>
+      <div class="footer__wrapper">
+        <p>Popular directions of exchange</p>
+        <ul class="footer__popular__list">
+          <li>Exchange Bitcoin to Qiwi</li>
+          <li>Exchange Sber to Bitcoin </li>
+          <li>Exchange Ether to Sber </li>
+          <li>Exchange Ether to Tinkoff</li>
+        </ul>
+      </div>
+      <div class="footer__wrapper">
+        <ul class="footer__menu">
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">Tariffs</a>
+          </li>
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">Reviews</a>
+          </li>
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">Rules</a>
+          </li>
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">FAQ</a>
+          </li>
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">For partners</a>
+          </li>
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">Policy</a>
+          </li>
+          <li class="footer__menu_item">
+            <a class="demo-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper">
+        <button class="footer__signup_btn signup-btn btn demo-link">Sign Up</button>
+        <button class="footer__login_btn login-btn btn">Log in</button>
+        <button class="footer__logout_btn logout-btn btn">Login out</button>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal-blur">
+    <div class="modal">
+      <div class="modal__close"></div>
+      <h2 class="modal__header">head</h2>
+      <p class="modal__content">text</p>
+    </div>
+  </div>   
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="module" src="./js/app.js"></script> 
+</body>
+</html>
